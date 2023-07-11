@@ -8,6 +8,18 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Lesson</title>
+
+    <script>
+      //value limitation for range-input
+      document.addEventListener('DOMContentLoaded', function() {
+        let rangeInput = document.getElementById('range-input');
+        rangeInput.addEventListener('input', function() {
+          if (rangeInput.value > 100) {
+            rangeInput.value = 100; // Set value to 100 if it exceeds the limit
+          }
+        });
+      })
+    </script>
   </head>
   <body>
     <label for="disabled-button">Disabled Button:</label>

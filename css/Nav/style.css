@@ -1,0 +1,64 @@
+body{
+    background-color: black;
+}
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(43, 47, 52);
+   
+}
+button{
+    padding-right: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(43, 47, 52);
+}
+.search-button {
+    background-color: rgb(43, 47, 52);
+    color: green;
+    border: 1px solid green;
+    border-radius: 10%;
+    padding: 5px;
+}
+.search-button:hover {
+    background-color: green;
+    color: white;
+}
+
+input{
+    padding: 4px;
+    color: grey;
+    border: 0px;
+    border-radius: 2%;
+}
+p{
+    padding-right: 10px;
+    color: white;
+}
+a{
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+select{
+    
+    border: none;
+    outline: none;
+    background-color: rgb(43, 47, 52);
+    color: rgb(131, 130, 130);
+    font-weight: bold;
+}
+
+
+
+.disabled{
+    color: rgb(111, 110, 110);
+    padding-right: 50px;
+    padding-left: 10px;
+}
+
+#home{
+    color: white;
+}
+#link{
+    color: rgb(131, 130, 130);
+}

@@ -1,0 +1,8 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#orange{
+    flex-grow: 0.6;
+}

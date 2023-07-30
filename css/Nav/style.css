@@ -1,9 +1,13 @@
 body{
     background-color: black;
+    margin: 0;
+    padding: 0;
 }
 nav{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(43, 47, 52);
+    padding: 5px;
+    
    
 }
 button{
@@ -30,7 +34,7 @@ input{
     border: 0px;
     border-radius: 2%;
 }
-p{
+span{
     padding-right: 10px;
     color: white;
 }
@@ -48,8 +52,16 @@ select{
     font-weight: bold;
 }
 
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
 
-
+.search{
+    margin-left: auto;
+}
 .disabled{
     color: rgb(111, 110, 110);
     padding-right: 50px;
@@ -62,3 +74,4 @@ select{
 #link{
     color: rgb(131, 130, 130);
 }
+

@@ -1,0 +1,118 @@
+body{
+    display: flex;
+    justify-content: space-between;
+}
+.conteiner { 
+    justify-content:center ;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(217, 217, 217, 1);
+    width: 203px;
+    height: 310px;
+    position: relative;
+    border-radius: 21px;
+}
+.first-row{
+    display: flex;
+}
+.second-row{
+    display: flex;
+}
+
+.avatar { 
+    background-color: rgba(255, 255, 255, 1);
+    width: 26px;
+    height: 25px;
+    border-radius: 21px;
+    margin: 5px;
+}
+
+.name, .date { 
+    margin-top: 7px;
+    font-size: 10px;
+    
+}
+.post-info {  display: grid;
+    grid-template-columns: 35px 80px;
+    grid-template-rows: 10px 20px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "avatar name"
+      "avatar date";
+  }
+  
+  .avatar { grid-area: avatar; }
+  
+  .name { grid-area: name; }
+  
+  .date { grid-area: date; }
+
+.options{
+    width: 18px;
+    height: 15px;
+    margin-left: 65px;
+    margin-top: 12px;
+    background-image: url(images/image_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+
+.post-img{ 
+    margin-top: 5px;
+    width: 203px;
+    height: 181px;
+    background-image: url(images/image_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.heart { 
+    color: rgba(0, 0, 0, 1);
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+.message-icon { 
+    width: 11px;
+    height: 11px;
+    margin-top: 6px;
+    margin-left: 5px;
+
+    background-image: url(images/image_3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content { 
+    margin-left: 8px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 1);
+    font-size: 9px;
+    letter-spacing: 0;
+    width: 190px;
+    
+}
+
+@media (max-width: 768px) {
+    body{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .conteiner{
+        margin-top: 20px;
+    }
+    }
+  
+ 
+  
+  @media (max-width: 375px) {
+    body {
+      flex-direction: column;
+    }
+    .conteiner{
+        margin-top: 20px;
+    }
+    }

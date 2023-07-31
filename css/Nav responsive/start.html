@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+      }
+
+  </script>
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <span><b>Navbar</b></span>
+      <a href="#" id="home"><b>Home</b></a>
+      <a href="#" id="link">Link</a>
+      <select><option value="Dropdown">Dropdown</option></select>
+      <button disabled class="disabled">Disable</button>
+      
+      <div class="search">
+        <input type="text" value="Search">
+        <button class="search-button">Search</button>
+      </div>
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <ul class="menu" id="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+  </div>
+  </nav>
+
+</body>
+</html>

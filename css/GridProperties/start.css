@@ -1,0 +1,27 @@
+.grid-container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "green green green"
+      "yellow red blue"
+      "orange orange blue";
+  }
+  
+  #green { grid-area: green; }
+  
+  #yellow { grid-area: yellow; }
+  
+  #red { grid-area: red; }
+  
+  #orange { grid-area: orange; }
+  
+  #blue { grid-area: blue; }
+  
+  
+  html, body , .grid-container {
+    height: 100%;
+    margin: 0;
+  }
+  

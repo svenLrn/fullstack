@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            width: 100px;
+            height: 100px;
+            margin: 0;
+            overflow: hidden;
+        }
+        #block {
+            width: 2px;
+            height: 6px;
+            background-color: red;
+            position: absolute;
+            pointer-events: none; /* Чтобы блок не мешал интеракции с элементами страницы */
+        }
+    </style>
+</head>
+<body>
+    <div id="block"></div>
+
+    <script>
+        document.addEventListener("mousemove", function(event) {
+            var block = document.getElementById("block");
+            var x = event.clientX - 1; // Смещение блока, чтобы он центрировался относительно курсора
+            var y = event.clientY - 3; // Смещение блока, чтобы он центрировался относительно курсора
+            block.style.left = x + "px";
+            block.style.top = y + "px";
+        });
+    </script>
+</body>
+</html>

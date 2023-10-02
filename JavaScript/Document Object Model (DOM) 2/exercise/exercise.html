@@ -22,6 +22,9 @@
 <script>
   const formInputs = document.getElementsByClassName('form-input');
   Array.from(formInputs).forEach(i => {
-    console.log(i.value);
+    if (i.getAttribute('type') == 'text') {
+      console.log(i.value);
+    }
+    
   });
 </script>
